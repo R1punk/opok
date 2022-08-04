@@ -1,0 +1,43 @@
+{
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "tag": "proxy",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "104.17.2.81", // ISI BUG IP
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "1bdd6480-1268-11ed-89fa-1239d0255272", // ISI PASSWORD TROJAN
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "api.midtrans.com" // ISI BUG HOST
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "sg6-trojan.bonds.id" // ISI HOST AKUN
+          },
+          "path": "ws://api.midtrans.com/howdy" // ISI SESUAI FORMAT
+      },
+       "tcpSettings": null,
+       "sockopt": {
+       "domainStrategy": "UseIPv4"
+        }
+      }
+    }
+  ]
+}

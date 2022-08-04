@@ -1,0 +1,18 @@
+{
+    "dns": {
+    "disableFallbackIfMatch": true,
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com"
+    },
+    "servers": [
+      "fakedns",
+      {
+        "address": "https://dns.google/dns-query",
+        "concurrent": true
+      }
+    ]
+  },
+   "tag": "dns",
+   "queryStrategy": "UseIP"
+    }
+}

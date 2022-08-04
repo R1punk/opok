@@ -1,0 +1,43 @@
+{
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": 8,
+        "enabled": false
+      },
+      "tag": "proxy",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "192.187.132.181", // ISI BUG IP
+            "flow": "",
+            "level": 8,
+            "method": "chacha20-poly1305",
+            "ota": false,
+            "password": "1bdd6480-1268-11ed-89fa-1239d0255272", // ISI PASSWORD TROJAN
+            "port": 443
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "bug.com" // ISI BUG HOST
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "gsyhdue.id" // ISI HOST AKUN
+          },
+          "path": "ws://shdjjemshehjej" // ISI SESUAI FORMAT
+      },
+       "tcpSettings": null,
+       "sockopt": {
+       "domainStrategy": "UseIPv4"
+        }
+      }
+    }
+  ]
+}

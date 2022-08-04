@@ -1,0 +1,8 @@
+Xray 1.5.9 (Xray, Penetrates Everything.) Custom (go1.18.2 linux/arm)
+A unified platform for anti-censorship.
+2022/08/03 12:56:07 Using confdir from env: /data/data/com.termux/files/home/.suroot/xray/confs
+2022/08/03 12:56:07 [Info] infra/conf/serial: Reading config: /data/data/com.termux/files/home/.suroot/xray/confs/base.json
+2022/08/03 12:56:07 [Info] infra/conf/serial: Reading config: /data/data/com.termux/files/home/.suroot/xray/confs/dns.json
+2022/08/03 12:56:07 [Info] infra/conf/serial: Reading config: /data/data/com.termux/files/home/.suroot/xray/confs/proxy.json
+xctl> [ /data/data/com.termux/files/home/.suroot/xray/confs/proxy.json ] prepended outbound with tag:  proxy
+2022/08/03 12:56:07 [Info] infra/conf/serial: Reading config: /data/data/com.termux/files/home/.suroot/xray/confs/routing.json
